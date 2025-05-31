@@ -6,17 +6,38 @@ export const blogSchema = defineType({
     type: "document",
     fields: [
         defineField({
-            name: 'blogs',
+            name: 'Title',
             type: 'string',
-            validation: rule => rule.min(3)
         }),
         defineField({
-            name: 'description',
+            name: 'Slug',
+            type: 'slug',
+            options: { source: 'Title' },
+
+        }),
+        defineField({
+            name: 'Date',
+            type: 'date',
+            options: {
+                dateFormat: 'DD-MM-YYYY'
+            }
+        }),
+        defineField({
+            name: 'Tag',
             type: 'string',
+            options: {
+                list: ['JavaScript', 'React', 'Sanity', 'Life Lessons'],
+                layout: 'radio'
+            }
         }),
         defineField({
             name: 'body',
-            type: 'text',
+            type: 'array',
+            of: [{ type: 'block' }]
+        }),
+        defineField({
+            name: 'Image',
+            type: 'image',
         }),
     ],
 })
