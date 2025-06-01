@@ -75,11 +75,11 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="flex flex-row gap-3">
-        <button className="border cursor-pointer rounded-md border-gray-300 px-1.5 py-1.5">
+        <button className="border cursor-pointer rounded-md border-gray-300 px-1.5 py-1.5 hover:bg-gray-100">
           <Moon size={17} strokeWidth={2} />
           {/* <Sun /> */}
         </button>
-        <a href="" className="flex flex-row border rounded border-gray-300 px-2 justify-center items-center gap-0.5">
+        <a href="" className="flex flex-row border rounded border-gray-300 px-2 justify-center items-center gap-0.5 hover:bg-gray-100">
           <Download size={17} strokeWidth={2} /> <span>Resume</span>
         </a>
       </div>
