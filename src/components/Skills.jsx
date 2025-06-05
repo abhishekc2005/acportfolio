@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <section className="m-10">
+    <section className="">
       <h2 className="text-2xl font-semibold">Skills</h2>
       <hr />
       <div className="flex flex-col">

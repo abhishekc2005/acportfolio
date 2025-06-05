@@ -5,7 +5,7 @@ import Hackathons from "../components/Hackathons";
 
 const Home = () => {
   return (
-    <div className="w-3/5 m-auto">
+    <div className="w-[54%] m-auto">
       <Intro />
       <Skills />
       <Certifications />

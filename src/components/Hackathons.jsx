@@ -1,6 +1,6 @@
 const Hackathons = () => {
   return (
-    <section className="m-10">
+    <section className="">
       <h2 className="text-2xl font-semibold">Hackathons</h2>
       <hr />
       <div className="border-l-2 pl-4 border-gray-400 hover:border-blue-500">
