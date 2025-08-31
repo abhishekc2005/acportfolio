@@ -1,6 +1,5 @@
 import { ThemeProvider } from "./components/theme-provider";
 import Skills from "./components/Sections/Skills";
-import Work from "./components/Sections/Work";
 import Certifications from "./components/Sections/Certifications";
 import Hackathons from "./components/Sections/Hackathons";
 import Blogs from "./components/Sections/Blogs";
@@ -12,10 +11,9 @@ import TopSection from "./components/Sections/TopSection";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="px-5 sm:px-10 md:px-20 lg:px-[clamp(6rem,22vw,500px)] space-y-7 my-5 sm:my-8">
+      <div className="px-5 sm:px-10 md:px-20 lg:px-[clamp(6rem,22vw,500px)] space-y-8 my-5 sm:my-8">
         <TopSection />
         <Skills />
-        <Work />
         <Projects />
         <Certifications />
         <Hackathons />

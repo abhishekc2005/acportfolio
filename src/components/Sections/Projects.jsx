@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <div>
       <SubHeading text="Portfolio" icon={IconFolders} />
-      <div className="space-y-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 gap-x-10">
         {projectsData.map(({ name, desc, website, github }) => (
           <ProjectCard
             name={name}

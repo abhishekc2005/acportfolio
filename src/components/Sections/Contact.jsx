@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <div className="space-y-5">
       <SubHeading text="Say Hello" icon={IconMessage} />
-      <p className="text-neutral-400">
+      <p className="dark:text-neutral-400">
         Have a project in mind or just want to chat? I'd love to hear from you.
       </p>
 
@@ -35,7 +35,6 @@ const Contact = () => {
           id="name"
           placeholder="Your name"
           required
-          className=""
         />
 
         <Label className="sr-only" htmlFor="email">
@@ -47,7 +46,6 @@ const Contact = () => {
           id="email"
           placeholder="Your email"
           required
-          className=""
         />
 
         <Label className="sr-only" htmlFor="sub">

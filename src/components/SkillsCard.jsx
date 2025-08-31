@@ -52,7 +52,7 @@ const SkillsCard = () => {
     },
     {
       category: "Programming Languages",
-      tools: ["C++", "JavaScript", "TypeScript"],
+      tools: ["C++", "JavaScript", "TypeScript", "Python"],
     },
   ];
 
@@ -60,10 +60,10 @@ const SkillsCard = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 gap-x-10">
       {skills.map(({ category, tools }) => (
         <div className="flex flex-col gap-0.5" key={category}>
-          <span className="underline underline-offset-2 text-teal-500">
+          <span className="underline underline-offset-2">
             {category}
           </span>
-          <p className="text-neutral-300">
+          <p className="dark:text-neutral-400">
             {tools.map((tool) => (
               <span key={tool}> {tool} |</span>
             ))}

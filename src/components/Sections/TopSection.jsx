@@ -25,12 +25,14 @@ const TopSection = () => {
 
       <div className="sm:col-start-2 sm:row-start-1">
         <div className="flex flex-row items-center gap-2 sm:row-start-1 sm:col-start-2 sm:col-end-6">
-          <h1 className="text-xl font-bold">Hey, I'm Chetan Yadav</h1>
+          <h1 className="text-xl sm:text-2xl font-bold">
+            Hey, I'm Chetan Yadav
+          </h1>
 
           <TooltipWrapper label={"Email"}>
             <a
               href={mailLink}
-              className="flex items-center text-sm"
+              className="flex items-center text-sm dark:text-neutral-400 hover:text-teal-400"
               target="_blank"
               aria-label={"Email"}
             >
@@ -41,8 +43,8 @@ const TopSection = () => {
           </TooltipWrapper>
         </div>
 
-        <p className="flex flex-row justify-center items-center w-fit sm:row-start-2 sm:col-start-2 sm:col-end-6">
-          <IconMapPin /> Indore, India
+        <p className="flex flex-row justify-center items-center gap-1 dark:text-neutral-400 w-fit sm:row-start-2 sm:col-start-2 sm:col-end-6">
+          <IconMapPin size={18} /> Indore, India
         </p>
 
         <div className="sm:row-start-3 sm:col-start-2 sm:col-end-6">
@@ -60,7 +62,7 @@ const TopSection = () => {
         </div>
       </div>
 
-      <p className="text-center text-neutral-400 sm:col-span-3 sm:row-start-2">
+      <p className="dark:text-neutral-400 sm:col-span-3 sm:row-start-2">
         I'm a Full Stack Developer passionate about building web applications,
         exploring modern technologies, and learning in public. Some technologies
         I enjoy working with include Next.js, React, and TypeScript.
