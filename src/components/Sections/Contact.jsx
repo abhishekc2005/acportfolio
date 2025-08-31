@@ -1,17 +1,26 @@
 import SubHeading from "../SubHeading";
 import { IconMessage } from "@tabler/icons-react";
-import { useForm } from "@formspree/react";
+import { useForm, ValidationError } from "@formspree/react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
+import { toast } from "sonner";
+import { IconLoader2 } from "@tabler/icons-react";
+import { useEffect } from "react";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("myzjzyje");
 
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Thanks for reaching out. I'll get back to you soon.");
+    }
+
+    if (state.errors) {
+      toast.error("Something went wrong. Please try again later.");
+    }
+  }, [state.succeeded, state.errors]);
 
   return (
     <div className="space-y-5">
@@ -21,9 +30,7 @@ const Contact = () => {
       </p>
 
       <form
-        action="https://formspree.io/f/myzjzyje"
         onSubmit={handleSubmit}
-        method="POST"
         className="grid sm:grid-cols-2 gap-4 max-w-[650px]"
       >
         <Label className="sr-only" htmlFor="name">
@@ -48,13 +55,13 @@ const Contact = () => {
           required
         />
 
-        <Label className="sr-only" htmlFor="sub">
+        <Label className="sr-only" htmlFor="subject">
           Subject
         </Label>
         <Input
           type="text"
-          name="sub"
-          id="sub"
+          name="subject"
+          id="subject"
           placeholder="What's this about"
           required
           className="sm:col-span-2"
@@ -66,14 +73,13 @@ const Contact = () => {
         <Textarea
           name="message"
           id="message"
-          cols={100}
-          rows={30}
           placeholder="Your message"
           required
           className="h-[100px] sm:col-span-2"
         ></Textarea>
-        <Button className="sm:w-fit" type="submit">
-          Send Message
+        <Button disabled={state.submitting} className="sm:w-fit" type="submit">
+          {state.submitting && <IconLoader2 className="animate-spin" />}
+          {state.submitting ? "Sending..." : "Send Message"}
         </Button>
       </form>
     </div>

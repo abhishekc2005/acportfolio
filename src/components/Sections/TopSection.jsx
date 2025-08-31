@@ -35,6 +35,7 @@ const TopSection = () => {
               className="flex items-center text-sm dark:text-neutral-400 hover:text-teal-400"
               target="_blank"
               aria-label={"Email"}
+              rel="noopener noreferrer"
             >
               <span>(</span>
               <IconMail size={18} />
@@ -65,7 +66,21 @@ const TopSection = () => {
       <p className="dark:text-neutral-400 sm:col-span-3 sm:row-start-2">
         I'm a Full Stack Developer passionate about building web applications,
         exploring modern technologies, and learning in public. Some technologies
-        I enjoy working with include Next.js, React, and TypeScript.
+        I enjoy working with include Next.js, React, and TypeScript. I also
+        experiment with creating tech videos on YouTube, where I share what I
+        learn.{"  "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chetan Yadav YouTube channel"
+          className="text-black dark:text-white text-sm dark:hover:text-teal-400"
+          href="https://www.youtube.com/@chetanyadav07"
+        >
+          @
+          <span className="hover:underline hover:underline-offset-4">
+            youtube
+          </span>
+        </a>
       </p>
     </div>
   );
