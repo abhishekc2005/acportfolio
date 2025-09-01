@@ -8,7 +8,7 @@ export function ModeToggle() {
   return (
     <Button
       variant="ghost"
-      className="hover:text-teal-400 dark:text-neutral-400 dark:hover:text-teal-400"
+      className="hover:text-teal-600 dark:text-neutral-400 dark:hover:text-teal-400"
       size="icon"
       onClick={() => {
         theme == "dark" ? setTheme("light") : setTheme("dark");

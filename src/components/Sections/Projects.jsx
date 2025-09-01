@@ -6,8 +6,7 @@ const projectsData = [
   {
     name: "PDF Link Disabler",
     desc: "Created a Chrome extension that removes internal links from PDF files to improve readability and prevent accidental navigation during text copying.",
-    website: "#",
-    github: "#",
+    github: "https://github.com/Chetan0724/Pdf-Link-Disabler",
   },
   {
     name: "ChatPrint",

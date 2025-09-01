@@ -7,7 +7,7 @@ const ProjectCard = ({ name, desc, website, github }) => {
     <div className="space-y-1.5">
       <h3 className="text-md">{name}</h3>
       <p className="dark:text-neutral-400">{desc}</p>
-      <div>
+      <div className="space-x-5">
         <CustomButton text="Website" icon={IconExternalLink} link={website} />
         <CustomButton text="View Repo" icon={IconBrandGithub} link={github} />
       </div>

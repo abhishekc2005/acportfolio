@@ -15,55 +15,53 @@ const TopSection = () => {
   const mailLink = "mailto:ydvchetan01@gmail.com";
 
   return (
-    <div className="grid grid-cols-1 place-items-center sm:grid-cols-3">
+    <div className="space-y-5">
       <Header />
-      <img
-        src={Profile}
-        alt="profile"
-        className="rounded-full w-25 sm:col-start-1 sm:row-start-1"
-      />
+      <div className="flex flex-col items-center sm:flex-row sm:items-center gap-5">
+        <img src={Profile} alt="profile" className="rounded-full w-25" />
 
-      <div className="sm:col-start-2 sm:row-start-1">
-        <div className="flex flex-row items-center gap-2 sm:row-start-1 sm:col-start-2 sm:col-end-6">
-          <h1 className="text-xl sm:text-2xl font-bold text-nowrap">
-            Hey, I'm Chetan Yadav
-          </h1>
+        <div className="flex flex-col justify-center items-center sm:items-start gap-1">
+          <div className="flex flex-row items-center gap-2">
+            <h1 className="text-xl sm:text-2xl font-bold text-nowrap">
+              Hey, I'm Chetan Yadav
+            </h1>
 
-          <TooltipWrapper label={"Email"}>
-            <a
-              href={mailLink}
-              className="flex items-center text-sm dark:text-neutral-400 hover:text-teal-400 dark:hover:text-teal-400"
-              target="_blank"
-              aria-label={"Email"}
-              rel="noopener noreferrer"
-            >
-              <span>(</span>
-              <IconMail size={18} />
-              <span>)</span>
-            </a>
-          </TooltipWrapper>
-        </div>
+            <TooltipWrapper label={"Email"}>
+              <a
+                href={mailLink}
+                className="flex items-center text-sm dark:text-neutral-400 hover:text-teal-600 dark:hover:text-teal-400"
+                target="_blank"
+                aria-label={"Email"}
+                rel="noopener noreferrer"
+              >
+                <span>(</span>
+                <IconMail size={18} />
+                <span>)</span>
+              </a>
+            </TooltipWrapper>
+          </div>
 
-        <p className="flex flex-row justify-center items-center gap-1 dark:text-neutral-400 w-fit sm:row-start-2 sm:col-start-2 sm:col-end-6">
-          <IconMapPin size={18} /> Indore, India
-        </p>
+          <p className="flex flex-row justify-center items-center gap-1 dark:text-neutral-400 w-fit">
+            <IconMapPin size={18} /> Indore, India
+          </p>
 
-        <div className="sm:row-start-3 sm:col-start-2 sm:col-end-6">
-          <CustomButton
-            text="Linkedin"
-            icon={IconBrandLinkedin}
-            link={linkedinLink}
-          />
-          <CustomButton
-            text="Github"
-            icon={IconBrandGithub}
-            link={githubLink}
-          />
-          <CustomButton text="Twitter" icon={IconBrandX} link={twitterLink} />
+          <div className="flex flex-row gap-5">
+            <CustomButton
+              text="Linkedin"
+              icon={IconBrandLinkedin}
+              link={linkedinLink}
+            />
+            <CustomButton
+              text="Github"
+              icon={IconBrandGithub}
+              link={githubLink}
+            />
+            <CustomButton text="Twitter" icon={IconBrandX} link={twitterLink} />
+          </div>
         </div>
       </div>
 
-      <p className="dark:text-neutral-400 sm:col-span-3 sm:row-start-2">
+      <p className="dark:text-neutral-400">
         I'm a Full Stack Developer passionate about building web applications,
         exploring modern technologies, and learning in public. Some technologies
         I enjoy working with include Next.js, React, and TypeScript. I also
@@ -73,7 +71,7 @@ const TopSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chetan Yadav YouTube channel"
-          className="text-black dark:text-white text-sm dark:hover:text-teal-400"
+          className="text-black dark:text-white text-sm hover:text-teal-600 dark:hover:text-teal-400 hover:font-semibold"
           href="https://www.youtube.com/@chetanyadav07"
         >
           @

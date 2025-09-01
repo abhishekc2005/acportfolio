@@ -5,7 +5,7 @@ import { TooltipWrapper } from "./TooltipWrapper";
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-end w-full sm:col-start-3 sm:row-start-1">
+    <header className="flex flex-row justify-end w-full gap-2">
       <CustomButton
         text="Resume"
         icon={IconDownload}
