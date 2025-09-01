@@ -1,11 +1,11 @@
 import SubHeading from "../SubHeading";
 import { IconMessage } from "@tabler/icons-react";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
-import { toast } from "sonner";
+import toast from "../Toast";
 import { IconLoader2 } from "@tabler/icons-react";
 import { useEffect } from "react";
 
@@ -14,11 +14,17 @@ const Contact = () => {
 
   useEffect(() => {
     if (state.succeeded) {
-      toast.success("Thanks for reaching out. I'll get back to you soon.");
+      toast({
+        title: "Message Sent!",
+        description: "Thanks for reaching out. I'll get back to you soon.",
+      });
     }
 
     if (state.errors) {
-      toast.error("Something went wrong. Please try again later.");
+      toast({
+        title: "Something went wrong!",
+        description: "Please try again later.",
+      });
     }
   }, [state.succeeded, state.errors]);
 

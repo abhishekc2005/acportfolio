@@ -5,7 +5,7 @@ const CustomButton = ({ text, icon: Icon, link }) => {
     <Button
       asChild
       variant="link"
-      className="dark:text-neutral-400 hover:text-teal-400"
+      className="dark:text-neutral-400 hover:text-teal-400 dark:hover:text-teal-400"
     >
       <a
         href={link}

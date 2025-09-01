@@ -19,6 +19,7 @@ const Hackathons = () => {
         <HackathonCard
           title={title}
           position={position}
+          key={title}
           year={year}
           organizer={organizer}
           desc={desc}

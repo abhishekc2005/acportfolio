@@ -20,19 +20,19 @@ const TopSection = () => {
       <img
         src={Profile}
         alt="profile"
-        className="rounded-full w-20 sm:col-start-1 sm:row-start-1"
+        className="rounded-full w-25 sm:col-start-1 sm:row-start-1"
       />
 
       <div className="sm:col-start-2 sm:row-start-1">
         <div className="flex flex-row items-center gap-2 sm:row-start-1 sm:col-start-2 sm:col-end-6">
-          <h1 className="text-xl sm:text-2xl font-bold">
+          <h1 className="text-xl sm:text-2xl font-bold text-nowrap">
             Hey, I'm Chetan Yadav
           </h1>
 
           <TooltipWrapper label={"Email"}>
             <a
               href={mailLink}
-              className="flex items-center text-sm dark:text-neutral-400 hover:text-teal-400"
+              className="flex items-center text-sm dark:text-neutral-400 hover:text-teal-400 dark:hover:text-teal-400"
               target="_blank"
               aria-label={"Email"}
               rel="noopener noreferrer"

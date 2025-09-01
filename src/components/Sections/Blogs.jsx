@@ -15,7 +15,7 @@ const Blogs = () => {
     <div>
       <SubHeading text="Recent Blog Posts" icon={IconLogs} />
       {blogsData.map(({ title, date, link, desc }) => (
-        <BlogCard title={title} date={date} link={link} desc={desc} />
+        <BlogCard title={title} date={date} link={link} desc={desc} key={title} />
       ))}
     </div>
   );

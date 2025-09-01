@@ -6,7 +6,11 @@ import { TooltipWrapper } from "./TooltipWrapper";
 const Header = () => {
   return (
     <header className="flex flex-row justify-end w-full sm:col-start-3 sm:row-start-1">
-      <CustomButton text="Resume" icon={IconDownload} />
+      <CustomButton
+        text="Resume"
+        icon={IconDownload}
+        link="https://drive.google.com/uc?export=view&id=1YbgctDQpsD2m_qYjdkSploYjBapGH_hR"
+      />
       <TooltipWrapper label={"Toggle theme"}>
         <div>
           <ModeToggle />

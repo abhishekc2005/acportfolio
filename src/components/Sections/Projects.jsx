@@ -26,6 +26,7 @@ const Projects = () => {
           <ProjectCard
             name={name}
             desc={desc}
+            key={name}
             website={website}
             github={github}
           />

@@ -33,7 +33,7 @@ const FooterLinks = () => {
     <div>
       {footerLinksData.map(({ label, link, Icon }) => (
         <TooltipWrapper label={label} key={label}>
-          <Button asChild variant="ghost" className="hover:text-teal-500">
+          <Button asChild variant="ghost" className="hover:text-teal-400">
             <a
               href={link}
               target="_blank"
