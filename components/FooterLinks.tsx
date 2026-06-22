@@ -30,13 +30,14 @@ const FooterLinks = () => {
   ];
 
   return (
-    <div>
+    <div className="flex flex-row flex-wrap items-center gap-1">
       {footerLinksData.map(({ label, link, Icon }) => (
         <TooltipWrapper label={label} key={label}>
           <Button
             asChild
             variant="ghost"
-            className="hover:text-teal-600 dark:hover:text-teal-400"
+            size="icon"
+            className="hover:text-foreground hover:bg-muted/50 transition-colors duration-200"
           >
             <a
               href={link}
@@ -44,7 +45,7 @@ const FooterLinks = () => {
               rel="noopener noreferrer"
               aria-label={label}
             >
-              {Icon && <Icon />}
+              {Icon && <Icon size={18} />}
             </a>
           </Button>
         </TooltipWrapper>

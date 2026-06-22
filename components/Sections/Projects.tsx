@@ -20,7 +20,7 @@ const Projects = () => {
   return (
     <div>
       <SubHeading text="Projects" icon={IconFolders} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 gap-x-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projectsData.map(({ name, desc, website, github }) => (
           <ProjectCard
             name={name}

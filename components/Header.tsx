@@ -12,7 +12,6 @@ const Header = () => {
       />
       <TooltipWrapper label={"Toggle theme"}>
         <div>
-          {/* <ModeToggle /> */}
         </div>
       </TooltipWrapper>
     </header>

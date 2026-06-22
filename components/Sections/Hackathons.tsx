@@ -14,17 +14,19 @@ const Hackathons = () => {
   ];
   return (
     <div>
-      <SubHeading text="Hackathon" icon={IconAward} />
-      {hackathonsData.map(({ title, position, year, organizer, desc }) => (
-        <HackathonCard
-          title={title}
-          position={position}
-          key={title}
-          year={year}
-          organizer={organizer}
-          desc={desc}
-        />
-      ))}
+      <SubHeading text="Hackathons" icon={IconAward} />
+      <div className="space-y-4">
+        {hackathonsData.map(({ title, position, year, organizer, desc }) => (
+          <HackathonCard
+            title={title}
+            position={position}
+            key={title}
+            year={year}
+            organizer={organizer}
+            desc={desc}
+          />
+        ))}
+      </div>
     </div>
   );
 };

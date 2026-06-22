@@ -5,15 +5,19 @@ import Projects from "@/components/Sections/Projects";
 import Footer from "@/components/Sections/Footer";
 import TopSection from "@/components/Sections/TopSection";
 import BackgroundHeader from "@/components/BackgroundHeader";
+import Work from "@/components/Sections/Work";
+import Certifications from "@/components/Sections/Certifications";
 
 function App() {
   return (
-    <div className="max-w-2xl mx-auto space-y-8 my-5 sm:my-8 ">
+    <div className="max-w-2xl mx-auto px-4 space-y-10 my-6 sm:my-10">
       <BackgroundHeader />
       <TopSection />
+      <Work />
       <Skills />
       <Projects />
       <Hackathons />
+      <Certifications />
       <Blogs />
       <Footer />
     </div>
