@@ -1,10 +1,16 @@
+import { ReactNode } from "react";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-export function TooltipWrapper({ children, label }) {
+interface TooltipWrapperProps {
+  children: ReactNode;
+  label: string;
+}
+
+export function TooltipWrapper({ children, label }: TooltipWrapperProps) {
   return (
     <Tooltip>
       <TooltipTrigger asChild>{children}</TooltipTrigger>

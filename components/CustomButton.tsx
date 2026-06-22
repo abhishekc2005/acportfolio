@@ -1,6 +1,13 @@
+import { ElementType } from "react";
 import { Button } from "./ui/button";
 
-const CustomButton = ({ text, icon: Icon, link }) => {
+interface CustomButtonProps {
+  text: string;
+  icon?: ElementType;
+  link: string;
+}
+
+const CustomButton = ({ text, icon: Icon, link }: CustomButtonProps) => {
   return (
     <Button
       asChild
