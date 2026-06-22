@@ -1,7 +1,13 @@
 import { toast as sonnerToast } from "sonner";
 import { IconX } from "@tabler/icons-react";
 
-export default function Toast(props) {
+interface ToastProps {
+  id: string | number;
+  title: string;
+  description: string;
+}
+
+export default function Toast(props: ToastProps) {
   const { title, description, id } = props;
 
   return (
