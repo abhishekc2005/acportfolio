@@ -13,12 +13,12 @@ type WorkEntry = {
 
 const workData: WorkEntry[] = [
   {
-    role: "Software Engineer in Test Trainee",
-    company: "Zimetrics",
+    role: "Full Stack Developer",
+    company: "Appzeto",
     type: "Full-time",
-    period: "Mar 2026 – Present",
-    duration: "4 mos",
-    location: "Pune, Maharashtra, India",
+    period: "Feb 2026 – Aug 2026",
+    duration: "6 mos",
+    location: "Indore, MP, India",
     mode: "On-site",
   },
   {

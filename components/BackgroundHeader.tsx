@@ -18,7 +18,7 @@ const BackgroundHeader = () => {
       <div className="absolute -bottom-10 left-6 w-20 h-20 sm:w-24 sm:h-24 rounded-full border-4 border-background overflow-hidden shadow-md z-10">
         <Image
           src="/profile.jpg"
-          alt="Chetan Yadav"
+          alt="Abhishek Choudhary"
           fill
           sizes="96px"
           className="object-cover"

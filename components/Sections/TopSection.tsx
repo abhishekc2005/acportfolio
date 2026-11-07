@@ -15,11 +15,11 @@ const TopSection = () => {
     <div className="space-y-4 mt-14 sm:mt-16">
       <div className="flex flex-col gap-1">
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
-          Chetan Yadav
+          Abhishek Choudhary
         </h1>
         <p className="flex flex-row items-center gap-1 text-sm text-muted-foreground">
           <IconMapPin size={14} />
-          Pune, India
+          Indore, India
         </p>
       </div>
 
@@ -28,7 +28,7 @@ const TopSection = () => {
           <IconBrandLinkedin size={13} />
           LinkedIn
         </a>
-        <a href="https://github.com/Chetan0724" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={pill}>
+        <a href="https://github.com/abhishekc2005" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={pill}>
           <IconBrandGithub size={13} />
           GitHub
         </a>
@@ -36,7 +36,7 @@ const TopSection = () => {
           <IconBrandX size={13} />
           Twitter
         </a>
-        <a href="mailto:ydvchetan01@gmail.com" aria-label="Email" className={pill}>
+        <a href="mailto:abhishekchoudharyorg@gmail.com" aria-label="Email" className={pill}>
           <IconMail size={13} />
           Email
         </a>
@@ -56,16 +56,14 @@ const TopSection = () => {
         I&apos;m a Full Stack Developer passionate about building web
         applications, exploring modern technologies, and learning in public.
         Some technologies I enjoy working with include Next.js, React, and
-        TypeScript. I also experiment with creating tech videos on YouTube,
-        where I share what I learn.{" "}
+        TypeScript.
         <a
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Chetan Yadav YouTube channel"
+          aria-label="Abhishek Choudhary YouTube channel"
           className="text-foreground text-sm font-medium hover:underline hover:underline-offset-4 transition-colors duration-200"
-          href="https://www.youtube.com/@chetanyadav07"
+          href="https://www.youtube.com/"
         >
-          @youtube
         </a>
       </p>
     </div>

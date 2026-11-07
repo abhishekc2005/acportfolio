@@ -22,10 +22,10 @@ const description =
   "I'm a Full Stack Developer passionate about building web applications, exploring modern technologies, and learning in public.";
 
 export const metadata: Metadata = {
-  title: "Chetan Yadav - A Full Stack Developer",
+  title: "Abhishek Choudhary - A Full Stack Developer",
   description,
   keywords: [
-    "Chetan Yadav",
+    "Abhishek Choudhary",
     "Portfolio",
     "Backend Developer",
     "Frontend Developer",
@@ -45,23 +45,23 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Chetan Yadav - A Full Stack Developer",
+    title: "Abhishek Choudhary - A Full Stack Developer",
     description,
     url: `${siteUrl}/`,
-    siteName: "Chetan Yadav - A Full Stack Developer",
+    siteName: "Abhishek Choudhary - A Full Stack Developer",
     type: "website",
     images: [
       {
         url: ogImage,
         width: 1200,
         height: 630,
-        alt: "Chetan Yadav - Full Stack Developer",
+        alt: "Abhishek Choudhary - Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chetan Yadav - A Full Stack Developer",
+    title: "Abhishek Choudhary - A Full Stack Developer",
     description,
     creator: "@Chetany0724",
     images: [ogImage],
@@ -87,7 +87,7 @@ const jsonLd = {
   "@context": "https://schema.org/",
   "@type": "Person",
   "@id": `${siteUrl}/#chetan-yadav`,
-  name: "Chetan Yadav",
+  name: "Abhishek Choudhary",
   gender: "male",
   url: siteUrl,
   image: ogImage,
@@ -95,7 +95,7 @@ const jsonLd = {
   description,
   sameAs: [
     "https://twitter.com/Chetany0724",
-    "https://github.com/chetany0724",
+    "https://github.com/abhishekc2005",
     "https://www.linkedin.com/in/chetan-yadav0724/",
   ],
   alumniOf: {
@@ -107,7 +107,7 @@ const jsonLd = {
     "JavaScript",
     "Next.js",
     "Full Stack Development",
-    "C++",
+    "Java",
     "Data Structures and Algorithms",
     "SEO",
     "CSS",
@@ -128,7 +128,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#18181B" media="(prefers-color-scheme: dark)" />

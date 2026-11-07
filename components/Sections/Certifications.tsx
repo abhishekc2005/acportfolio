@@ -5,17 +5,10 @@ import { IconCertificate } from "@tabler/icons-react";
 const Certifications = () => {
   const certificationsData = [
     {
-      title: "The Complete Full-Stack Web Development Bootcamp",
-      platform: "Udemy",
+      title: "Programmming In Java",
+      platform: "NPTEL",
       link: "https://www.udemy.com/certificate/UC-9a3bbb43-fe2a-4cfe-8680-0bc0380a0e1c/",
-      month: "June",
-      year: 2024,
-    },
-    {
-      title: "Python for Data Science, AI & Development",
-      platform: "Coursera",
-      link: "https://coursera.org/share/ab751f318c258e5c96348ed7e749e41a",
-      month: "Feb",
+      month: "NOV",
       year: 2025,
     },
     {

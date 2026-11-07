@@ -1,6 +1,5 @@
 import Skills from "@/components/Sections/Skills";
-import Hackathons from "@/components/Sections/Hackathons";
-import Blogs from "@/components/Sections/Blogs";
+
 import Projects from "@/components/Sections/Projects";
 import Footer from "@/components/Sections/Footer";
 import TopSection from "@/components/Sections/TopSection";
@@ -16,9 +15,9 @@ function App() {
       <Work />
       <Skills />
       <Projects />
-      <Hackathons />
+    
       <Certifications />
-      <Blogs />
+      
       <Footer />
     </div>
   );

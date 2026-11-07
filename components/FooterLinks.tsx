@@ -1,3 +1,5 @@
+"use client";
+
 import { IconBrandLinkedin } from "@tabler/icons-react";
 import { IconBrandX } from "@tabler/icons-react";
 import { IconBrandGithub } from "@tabler/icons-react";
@@ -9,7 +11,7 @@ const FooterLinks = () => {
   const footerLinksData = [
     {
       label: "Github",
-      link: "https://github.com/Chetan0724",
+      link: "https://github.com/abhishekc2005",
       Icon: IconBrandGithub,
     },
     {

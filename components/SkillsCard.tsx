@@ -54,7 +54,7 @@ const skills: Skill[] = [
   { name: "Express.js", icon: IconServer, color: "currentColor" },
   { name: "Dodo Payments", icon: IconCreditCard, color: "#10B981" }, 
   { name: "Stripe", icon: IconBrandStripe, color: "#635BFF" },
-  { name: "Drizzle", icon: IconDroplet, color: "#C5F74F" }, 
+
   { name: "Prisma", icon: IconBrandPrisma, color: "#2D3748" },
   { name: "MySQL", icon: IconBrandMysql, color: "#4479A1" },
   { name: "Zod", icon: IconShieldCheck, color: "#3B82F6" },
