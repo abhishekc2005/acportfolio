@@ -1,6 +1,6 @@
 "use client";
 import { IconBrightness } from "@tabler/icons-react";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/components/theme-provider";
 import { Button } from "@/components/ui/button";
 
 export function ModeToggle() {

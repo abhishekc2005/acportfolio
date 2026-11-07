@@ -1,25 +1,41 @@
 "use client";
 
 import * as React from "react";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
+
+// Minimal theme context that replaces next-themes.
+// The theme is forced to "dark" so no runtime switching or script injection
+// is needed, which avoids the React 19 "script tag inside client component"
+// error that next-themes v0.4 triggers.
+
+const ThemeContext = React.createContext({
+  theme: "dark",
+  resolvedTheme: "dark",
+  setTheme: (_theme: string) => {},
+  themes: ["dark"],
+  forcedTheme: "dark" as string | undefined,
+  systemTheme: undefined as string | undefined,
+});
+
+export const useTheme = () => React.useContext(ThemeContext);
 
 export function ThemeProvider({
   children,
-  ...props
-}: React.ComponentProps<typeof NextThemesProvider>) {
-  const [mounted, setMounted] = React.useState(false);
-
-  React.useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  // Render children directly during SSR to avoid next-themes injecting a
-  // <script> tag (which React 19 / Next.js 16 does not support inside client
-  // components). The <html> element already carries suppressHydrationWarning
-  // and the "dark" class is set server-side via the className.
-  if (!mounted) {
-    return <>{children}</>;
-  }
-
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+}: {
+  children: React.ReactNode;
+  [key: string]: unknown;
+}) {
+  return (
+    <ThemeContext.Provider
+      value={{
+        theme: "dark",
+        resolvedTheme: "dark",
+        setTheme: () => {},
+        themes: ["dark"],
+        forcedTheme: "dark",
+        systemTheme: undefined,
+      }}
+    >
+      {children}
+    </ThemeContext.Provider>
+  );
 }
